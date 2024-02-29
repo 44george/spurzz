@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Booking Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Salon Booking Payment</h2>
+    <form action="process_payment.php" method="post">
+        <label>Select Services:</label><br>
+        <input type="checkbox" id="bradings" name="service[]" value="2500">
+        <label for="bradings">Brading (Ksh 2500)</label><br>
+        <input type="checkbox" id="dreadlocks" name="service[]" value="5000">
+        <label for="dreadlocks">Dreadlocks (Ksh 5000)</label><br>
+        <input type="checkbox" id="locks" name="service[]" value="1800">
+        <label for="locks">Locks (Ksh 1800)</label><br>
+        <input type="checkbox" id="wigs" name="service[]" value="7000">
+        <label for="wigs">Wigs (Ksh 7000)</label><br>
+
+        <label for="snack">Select Snack:</label>
+        <select id="snack" name="snack">
+            <option value="200">Snack (Ksh 200)</option>
+        </select><br>
+
+        <label for="food">Select Food:</label>
+        <select id="food" name="food">
+            <option value="400">Food (Ksh 400)</option>
+        </select><br>
+
+        <label>Select Payment Method:</label><br>
+        <input type="radio" id="mpesa" name="payment_method" value="M-Pesa">
+        <label for="mpesa">M-Pesa</label><br>
+        <input type="radio" id="pochi" name="payment_method" value="Pochi la Biashara">
+        <label for="pochi">Pochi la Biashara</label><br>
+        <input type="radio" id="till" name="payment_method" value="Till Number">
+        <label for="till">Till Number</label><br>
+
+        <label for="account_number">Account Number:</label>
+        <input type="text" id="account_number" name="account_number" required><br>
+
+        <p><b><a href="thank you.html">click here to procced</a></b></p>
+    </form>
+</div>
+
+</body>
+
+<a href="">click h/a>
+</html>

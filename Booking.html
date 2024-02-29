@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Appointment Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Salon Appointment Booking</h2>
+    <form action="submit_booking.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="hair_style">Hair Style:</label>
+        <select id="hair_style" name="hair_style">
+            <option value="lob">Lob</option>
+            <option value="beehive">Beehive</option>
+            <option value="pixie">Pixie</option>
+            <option value="bob">Bob</option>
+        </select>
+
+        <label for="hair_length">Hair Length:</label>
+        <select id="hair_length" name="hair_length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select>
+
+        <label for="hair_texture">Hair Texture:</label>
+        <select id="hair_texture" name="hair_texture">
+            <option value="normal">Normal</option>
+            <option value="virgin">Virgin</option>
+            <option value="dry">Dry</option>
+            <option value="oily">Oily</option>
+        </select>
+
+        <p><b><a href="specifications.html">click here to procced</a></b></p>
+    </form>
+</div>
+
+</body>
+</html>
